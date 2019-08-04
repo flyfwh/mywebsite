@@ -1,0 +1,108 @@
+.main{
+	width: 1000px;
+	margin: 0 auto;
+	background: rgba(200, 235, 246, .6);
+	padding: 50px;
+}
+.main h2{
+	color: #009ad6;
+	text-shadow: #fff 1px 1px 2px;
+	padding-bottom: 10px;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	border-bottom: 1px solid #666;
+}
+.main h2 span{
+	float: right;
+	font-size: 16px;
+	font-family: "宋体";
+}
+.navtab{
+	margin-top: 20px;
+	overflow: hidden;
+}
+.navtab .search{
+	margin-top: 10px;
+	float: right;
+}
+.navlist li{
+	float: left;
+	line-height: 36px;
+	margin: 10px 20px 0 0;
+	background: #009ad6;
+	padding: 0 15px;
+	border-radius: 5px;
+}
+.navlist a{
+	color: white;
+	font-size: 14px;
+}
+.navlist .share{
+	background: #fff;
+}
+.navlist .share a{
+	color: #333;
+}
+.form_search input{
+	float: left;
+	border: 1px solid #009ad6;
+	vertical-align: middle;
+}
+.form_search .search_text{
+	width: 220px;
+	height: 35px;
+	vertical-align: middle;
+	color: #009AD6;
+	padding-left: 10px;
+}
+.form_search .search_sumbit{
+	width: 55px;
+	height: 37px;
+	border-radius: 0 5px 5px 0;
+	background: #009ad6;
+	color: white;
+	cursor: pointer;
+}
+.pic_box{
+	margin-top: 40px;
+	overflow: hidden;
+	
+}
+.pic_box li{
+	float: left;
+	width: 290px;
+	height: 330px;
+	border: 1px solid #666;
+	margin-right: 30px ;
+	margin-bottom: 20px;
+	position: relative;
+}
+.pic_box li img{
+	padding: 15px;
+	width: 260px;
+	height: 260px;
+}
+.pic_box li p{
+	background: #009AD6;
+	line-height: 36px;
+	text-align: center;
+}
+.pic_box li a{
+	font-size: 16px;
+	color: white;
+}
+.pic_box .show_message{
+	position: absolute;
+	bottom: 36px;
+	left: 15px;
+	width: 230px;
+	background: #fff;
+	height: 130px;
+	line-height: 20px;
+	color: #999;
+	font-size: 16px;
+	margin: 0 auto;
+	padding: 15px;
+	border-top: 4px solid #009AD6;
+	display: none;
+}

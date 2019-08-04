@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 12px;
+}
+.box{
+	margin: 200px auto;
+	width: 1000px;
+	overflow: hidden;
+	border: 1px solid #666;
+}
+.banner{
+	height: 25px;
+	padding: 5px;
+	background: #eee;
+}
+.selDifficult{
+	width: 80px;
+}
+.reset{
+	margin-left: 60px;
+	background: #ccc;
+	color: #FF0000;
+	border-radius: 5px;
+	padding: 3px;
+}
+.animal{
+	border: 1px solid red;
+	float: left;
+	margin: 30px 10px;
+}
+.imageLeft{
+	cursor: pointer;
+}
+.imageRight{
+	cursor: pointer;
+}
+.box{
+	background: url(../img/timg.jpg);
+}

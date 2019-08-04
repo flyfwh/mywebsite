@@ -1,0 +1,180 @@
+body,div,h2,ul,li,a,img,p,h3,h2,h1,input,form{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 12px;
+	background: url(../img/bg.png) no-repeat top 60px center;
+	background-attachment: fixed;
+	font-family: "宋体";
+	margin: 0 auto;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?z9gfle');
+  src:  url('../fonts/icomoon.eot?z9gfle#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?z9gfle') format('truetype'),
+    url('../fonts/icomoon.woff?z9gfle') format('woff'),
+    url('../fonts/icomoon.svg?z9gfle#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+.head{
+	width: 100%;
+	background: rgba(0, 0, 0, .6);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+	height: 49px;
+}
+.head_box{
+	width: 1000px;
+	margin: 0 auto;
+	height: 49px;
+	line-height: 49px;
+}
+.head_fixed{
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	background: rgba(0, 0, 0, .8);
+}
+.logo{
+	display: inline-block;
+	width: 199px;
+	height: 49px;
+	background: url(../img/logo.png) no-repeat;
+}
+.logo h2{
+	text-indent: -9999px;
+}
+.nav{
+	height: 49px;
+	float: right;
+}
+.nav ul{
+	list-style-type: none;
+}
+.nav ul li{
+	text-decoration: none;
+	float: left;
+	margin: 5px 5px;
+	font-size: 20px;
+	height: 39px;
+	padding: 0 10px;
+	line-height: 39px;
+	position: relative;
+	text-align: center;
+}
+.nav ul li:hover{
+	border-radius: 40px 0 40px 0;
+	background-color: rgba(0, 0, 0, .1);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#19000000,endColorstr=#19000000);
+	
+}
+.nav ul a{
+	text-align: center;
+	color: #eee;
+}
+
+.nav ul a:hover{
+	color: orange;
+}
+.nav .game_works{
+	border-radius: 40px 0;
+	left: -10px;
+	position: absolute;
+	top:39px;
+	display: none;
+}
+.nav .show_game:hover .game_works{
+	display: block;
+}
+.nav .game_works li{
+	margin: 0;
+	z-index: 999;
+	width: 100px;
+	background: rgba(0, 0, 0, .4);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+	border: 4px solid rgba(0, 0, 0, .3);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+	
+}
+.nav .game_works a{
+	color: orange;
+}
+.nav .game_works a:hover{
+	color: white;
+}
+.nav .game_works li:hover{
+	border-radius: 0;
+	
+}
+.footer{
+	width: 100%;
+}
+.footer_contain_top{
+	background: #222222;
+	padding-bottom: 10px;
+}
+.lianjie{
+	color: #CCCCB5;
+	width: 950px;
+	margin: 0 auto;
+	padding-left: 50px;
+}
+.lianjie h2{
+	padding: 10px 0;
+}
+.footer_contain_top span{
+	margin-left: 50px;
+}
+.lianjie a{
+	color: #A6A6A6;
+}
+.lianjie a:hover{
+	color: #FF1493;
+	transition: all 0.5s ease;
+}
+.lianjie .maker{
+	float: right;
+	color: #A6A6A6;
+}
+.footer_contain_bottom{
+	background: #000;
+}
+.footer_bottom_box{
+	width: 1000px;
+	margin: 0 auto;
+	color: #3F3E3C;
+	line-height: 50px;
+	text-align: center;
+	font-size: 14px;
+	font-family: "宋体";
+}
+.footer_bottom_box span{
+	color: #A6A69C;
+	font-size: 16px;
+	cursor: pointer;
+}
+.gotop{
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	color: white;
+	background: #000;
+	font-family: 'icomoon';
+	font-size: 30px;
+	text-align: center;
+	line-height: 50px;
+	font-style: normal;
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	cursor: pointer;
+	display: none;
+}

@@ -1,0 +1,46 @@
+.main{
+	width: 1100px;
+	height: 600px;
+	background: rgba(0, 0, 0, .7);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000,endColorstr=#B2000000);
+	margin: 0 auto;
+	padding: 50px 25px;
+	position: relative;
+}
+.score{
+	position: absolute;
+	right: 40px;
+	top: 10px;
+	font-size: 28px;
+	color: #00BFFF;
+}
+.game_box{
+	width: 1100px;
+	height: 600px;
+	border: 2px solid #fff;
+	position: relative;
+}
+.game_box div.star{
+	
+}
+.stone{
+	position: absolute;
+	background: white;
+	text-align: center;
+	border-radius: 10px;
+}
+.stone span{
+	margin:0 4px;
+	display: inline-block;
+	font-size: 16px;
+}
+.stone span.xt{
+	color: red;
+}
+.main .button{
+	padding: 0 400px;
+}
+.main input{
+	width: 100px;
+	height: 50px;
+}

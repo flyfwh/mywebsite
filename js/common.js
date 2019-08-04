@@ -1,0 +1,19 @@
+(function(){
+	$(document).ready(function(){
+		//返回页面顶部按钮的出现和消失事件
+		//注册页面曲卷事件
+		$(window).scroll(function(e){
+			//当页面出现曲卷时，按钮出现
+			if($(window).scrollTop()){
+				$(".gotop").slideDown();
+			}else{
+				$(".gotop").slideUp();
+			}
+		});
+		//为gotop注册返回顶部事件
+		$(".gotop").click(function(e){
+			e.preventDefault();
+			$('html,body').animate({scrollTop: 0},"slow");
+		});
+	});
+})(window)

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>贪吃蛇</title>
+		<!--base里面写的是公共样式，是网页的头部和底部的样式-->
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<!--game1是对本界面主体部分的样式-->
+		<link rel="stylesheet" type="text/css" href="css/game1.css"/>
+		<!--导入jquery文件-->
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--common写的是网站的公共特效-->
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<!--Random是产生随机数的Js文件-->
+		<script src="js/Random.js" type="text/javascript" charset="utf-8"></script>
+		<!--game3是游戏主体js文件-->
+		<script src="js/game1.js" type="text/javascript" charset="utf-8"></script>
+		<!--食物的js文件-->
+		<script src="js/Food.js" type="text/javascript" charset="utf-8"></script>
+		<!--蛇的js文件-->
+		<script src="js/snake.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--网页头部star-->
+		<div class="head">
+			<!--头部内部-->
+			<div class="head_box">
+				<!--logo部分-->	
+				<div class="logo">
+					<h2>灰辉个人博客</h2>
+				</div>
+				<!--导航栏star-->
+				<div class="nav">
+					<ul>
+						<li><a href="index.html">网页首页</a></li>
+						<li><a href="#">学无止境</a></li>
+						<li><a href="record.html">记录的点滴</a></li>
+						<li><a href="#">认识自己</a></li>
+						<li><a href="#">成长时间抽</a></li>
+						<li class="show_game"><a href="#">个人作品</a>
+							<ul class="game_works">
+								<li><a href="game1.html">贪吃蛇</a></li>
+								<li><a href="game2.html">动物换边</a></li>
+								<li><a href="game3.html">打字找石头</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--网页头部end-->
+		<!--页面主体star-->
+			<div class="main">
+				<div class="box">
+				<div class="score" id="score">
+					成绩:<span id="score-number">0</span>
+				</div>
+				<div class="map" id="map">
+				</div>
+				<div class="page" id="page">
+					<input type="button" name="star" id="star" value="开始游戏" />
+				</div>
+			</div>
+		</div>
+		<!--页面主体end-->
+		<!--页面底部部分star-->
+		<div class="footer">
+			<div class="footer_contain_top">
+				<div class="lianjie">
+					<h2>友情链接</h2>
+					<span><a href="http://www.runoob.com/">菜鸟教程</a></span>
+					<span><a href="https://www.w3cschool.cn/">W3cschool</a></span>
+					<span><a href="https://developer.mozilla.org/zh-CN/">MDN Web</a></span>
+					<span><a href="https://code.ziqiangxuetang.com/django/django-tutorial.html">自强学堂</a></span>
+					<span class="maker">©源自一枚前端小白-狂飙的小辉</span>
+				</div>
+			</div>
+			<div class="footer_contain_bottom">
+				<div class="footer_bottom_box">
+					<p>Copyright © 2018·<span>狂飙的小辉个人博客</span> ·All rights reserved.鲁ICP备18026171号-1</p>
+				</div>
+			</div>
+		</div>
+		<!--页面底部部分end-->
+		<!--回访顶部按钮star-->
+		<div class="gotop">
+			<span></span>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var Game = new Game(document.getElementsByClassName("map")[0]);
+		document.getElementById("star").onclick = function(){
+			document.getElementsByClassName("map")[0].style.zIndex = 100;
+			document.getElementById("score").style.opacity =1;
+			Game.again();
+	        Game.init();
+		}
+	</script>
+</html>

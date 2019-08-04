@@ -1,0 +1,48 @@
+.box {
+	width: 800px;
+	height: 500px;
+	position: relative;
+	margin: 35px auto;
+	margin-bottom: 10px;
+}
+
+.map {
+	width: 800px;
+	height: 500px;
+	background-color: #ccc;
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	background: url(../img/bg.jpg) no-repeat;
+}
+
+.score {
+	color: deepskyblue;
+	font-size: 30px;
+	position: absolute;
+	left: 680px;
+	top: -40px;
+	opacity: 0;
+}
+
+.page {
+	background: url(../img/page.jpg) no-repeat;
+	width: 800px;
+	height: 500px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.page input {
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -100px;
+	margin-top: -50px;
+	cursor: pointer;
+	opacity: 0.8;
+}
