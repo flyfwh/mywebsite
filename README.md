@@ -1,5 +1,6 @@
 # 静态页面作品
 >点击菜单栏上的首页、记录点滴、个人作品三个标签可进入已完成界面，其中个人作品中有3个小游戏
+>网页展示为：https://flyfwh.github.io/mywebsite/
 
 ## 主要用了HTML CSS JS Jquery完成
 ### 首页介绍
